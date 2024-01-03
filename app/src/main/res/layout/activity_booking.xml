@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image565"
+    tools:context=".Booking">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="134dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_book_online_24" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="52dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="71dp"
+            android:layout_marginBottom="99dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="616dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="121dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="79dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="Duration"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintEnd_toStartOf="@+id/spinner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="151dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="Session Type"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toStartOf="@+id/spinner2"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="137dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="48dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="137dp"
+            android:layout_height="53dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="11dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="138dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="138dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="Set The Date"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="316dp"
+            android:layout_height="309dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="31dp"
+            android:background="@drawable/calen_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="159dp"
+            android:layout_marginEnd="160dp"
+            android:layout_marginBottom="64dp"
+            android:background="@drawable/btn_back"
+            android:text="Confirm"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

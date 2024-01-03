@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/peakpx"
+    tools:context=".Confirmed">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="100dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="205dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="152dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img7" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="36dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="359dp"
+        android:layout_marginBottom="383dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="361dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="Your booking has been confirmed!"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="168dp"
+        android:drawableRight="@drawable/baseline_share_24"
+        android:text="Share with friends"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

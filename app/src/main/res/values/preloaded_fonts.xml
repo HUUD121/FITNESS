@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/allerta</item>
+        <item>@font/andada</item>
+        <item>@font/andika</item>
+        <item>@font/anonymous_pro</item>
+        <item>@font/audiowide</item>
+        <item>@font/bai_jamjuree_light</item>
+        <item>@font/be_vietnam_light</item>
+        <item>@font/capriola</item>
+        <item>@font/carme</item>
+        <item>@font/comfortaa</item>
+        <item>@font/graduate</item>
+    </array>
+</resources>
