@@ -24,8 +24,10 @@
             android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/baseline_book_online_24" />
 
         <ImageView
@@ -45,6 +47,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Bac"
         android:layout_width="409dp"
         android:layout_height="616dp"
         android:layout_marginStart="1dp"
@@ -61,15 +64,14 @@
             android:layout_width="121dp"
             android:layout_height="37dp"
             android:layout_marginStart="79dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
-            android:layout_marginBottom="13dp"
             android:fontFamily="@font/comfortaa"
             android:text="Duration"
             android:textAlignment="center"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/textView3"
             app:layout_constraintEnd_toStartOf="@+id/spinner"
+            app:layout_constraintHorizontal_bias="0.3"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -77,39 +79,46 @@
             android:id="@+id/textView3"
             android:layout_width="151dp"
             android:layout_height="46dp"
-            android:layout_marginStart="64dp"
-            android:layout_marginEnd="9dp"
-            android:layout_marginBottom="12dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="12dp"
             android:fontFamily="@font/comfortaa"
             android:text="Session Type"
             android:textAlignment="center"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/textView4"
             app:layout_constraintEnd_toStartOf="@+id/spinner2"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <Spinner
             android:id="@+id/spinner"
-            android:layout_width="137dp"
-            android:layout_height="52dp"
+            android:layout_width="147dp"
+            android:layout_height="45dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="48dp"
+            android:background="@drawable/con_back2"
+            android:paddingLeft="10dp"
             android:spinnerMode="dropdown"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+
 
         <Spinner
             android:id="@+id/spinner2"
-            android:layout_width="137dp"
-            android:layout_height="53dp"
+            android:layout_width="146dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
             android:layout_marginEnd="48dp"
             android:layout_marginBottom="11dp"
+            android:background="@drawable/con_back2"
+            android:paddingLeft="10dp"
             android:spinnerMode="dropdown"
             app:layout_constraintBottom_toTopOf="@+id/textView4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/spinner"
-            app:layout_constraintVertical_bias="0.0" />
-
+            app:layout_constraintVertical_bias="0.333"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/textView4"
@@ -134,23 +143,31 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="31dp"
             android:background="@drawable/calen_back"
+            android:selectedWeekBackgroundColor="#7A7575"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="99dp"
+            android:layout_height="49dp"
             android:layout_marginStart="159dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="160dp"
             android:layout_marginBottom="64dp"
-            android:background="@drawable/btn_back"
+            android:backgroundTint="#A5A4A4"
+            android:clickable="true"
+            android:focusable="true"
+            android:hapticFeedbackEnabled="true"
             android:text="Confirm"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

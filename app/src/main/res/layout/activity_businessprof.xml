@@ -57,8 +57,9 @@
 
         <VideoView
             android:id="@+id/videoView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="348dp"
+            android:layout_height="197dp"
+            android:alpha="@dimen/cardview_default_radius"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -79,8 +80,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout6"
-        android:layout_width="377dp"
-        android:layout_height="80dp"
+        android:layout_width="369dp"
+        android:layout_height="81dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="18dp"
@@ -95,8 +96,9 @@
 
         <ImageView
             android:id="@+id/imageView16"
-            android:layout_width="141dp"
-            android:layout_height="94dp"
+            android:layout_width="114dp"
+            android:layout_height="88dp"
+            android:alpha="@dimen/cardview_default_elevation"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -136,7 +138,7 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/imageView16"
             app:layout_constraintTop_toBottomOf="@+id/textView7"
-            app:layout_constraintVertical_bias="0.75" />
+            app:layout_constraintVertical_bias="0.666" />
 
         <ImageView
             android:id="@+id/imageView40"
@@ -262,8 +264,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout8"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="336dp"
+        android:layout_height="187dp"
         android:layout_marginTop="36dp"
         android:layout_marginBottom="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -289,6 +291,7 @@
                 android:id="@+id/imageView20"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:alpha="@dimen/cardview_default_radius"
                 app:srcCompat="@drawable/img_5" />
 
             <ImageView
@@ -306,5 +309,17 @@
         </ViewFlipper>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="166dp"
+        android:layout_height="26dp"
+        android:background="@drawable/btn_back"
+        android:fontFamily="@font/comfortaa"
+        android:text="Book Your Spot Now"
+        android:textAlignment="center"
+        android:textColor="#FDFCFC"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="485dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
