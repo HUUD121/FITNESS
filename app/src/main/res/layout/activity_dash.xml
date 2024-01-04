@@ -95,6 +95,79 @@
                 android:background="@drawable/con_back2">
 
                 <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="My Gym Exercise Centre"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="144dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10a, Jalan Susur Perdana Tengah, Taman Bukit"
+                    tools:layout_editor_absoluteX="100dp"
+                    tools:layout_editor_absoluteY="44dp" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visit Now"
+                    android:textColor="#03A9F4"
+                    tools:layout_editor_absoluteX="189dp"
+                    tools:layout_editor_absoluteY="65dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/con_back2">
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="Sunny Fitness And Gymnasium"
+                    android:textColor="#090909"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="91dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="2nd, 28, Jalan Sultanah, Kampung Pegawai"
+                    tools:layout_editor_absoluteX="91dp"
+                    tools:layout_editor_absoluteY="44dp" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visit Now"
+                    android:textColor="#03A9F4"
+                    tools:layout_editor_absoluteX="192dp"
+                    tools:layout_editor_absoluteY="74dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/con_back2">
+
+                <TextView
                     android:id="@+id/textView29"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
