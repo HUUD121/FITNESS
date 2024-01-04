@@ -8,6 +8,7 @@
     tools:context=".Dash">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout13"
         android:layout_width="match_parent"
         android:layout_height="165dp"
         android:background="@drawable/cons_background"
@@ -54,11 +55,18 @@
         android:id="@+id/searchView2"
         android:layout_width="356dp"
         android:layout_height="56dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="1dp"
         android:background="@drawable/con_back2"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="179dp" />
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout13" />
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="409dp"
         android:layout_height="536dp"
         android:layout_marginStart="1dp"
@@ -66,7 +74,7 @@
         android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView2" >
+        app:layout_constraintTop_toBottomOf="@+id/searchView2">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -87,13 +95,87 @@
                 android:background="@drawable/con_back2">
 
                 <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="UNIQUE PLUS GYM"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="134dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="Floor 2, 51, Jalan Universiti 6, Taman Universiti"
+                    tools:layout_editor_absoluteX="62dp"
+                    tools:layout_editor_absoluteY="44dp" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visit Now"
+                    android:textColor="#03A9F4"
+                    tools:layout_editor_absoluteX="190dp"
+                    tools:layout_editor_absoluteY="70dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/con_back2">
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="307dp"
+                    android:layout_height="27dp"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="DR GYM Bodybuilding & Fitness Center"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="86dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="Jalan Kencana 1a/22, Sri Gading"
+                    tools:layout_editor_absoluteX="125dp"
+                    tools:layout_editor_absoluteY="50dp" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visit  Now"
+                    android:textColor="#03A9F4"
+                    tools:layout_editor_absoluteX="189dp"
+                    tools:layout_editor_absoluteY="72dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/con_back2">
+
+                <TextView
                     android:id="@+id/textView17"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/comfortaa"
                     android:text="Push N Pull Fitness Centre"
                     android:textColor="#050505"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     tools:layout_editor_absoluteX="92dp"
                     tools:layout_editor_absoluteY="16dp" />
 
@@ -150,8 +232,8 @@
                     android:layout_height="wrap_content"
                     android:text="Visit Now"
                     android:textColor="#03A9F4"
-                    tools:layout_editor_absoluteX="183dp"
-                    tools:layout_editor_absoluteY="68dp" />
+                    tools:layout_editor_absoluteX="188dp"
+                    tools:layout_editor_absoluteY="65dp" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -168,8 +250,25 @@
                     android:text="WNW Global Gym & Fitness"
                     android:textColor="#000000"
                     android:textSize="20sp"
-                    tools:layout_editor_absoluteX="104dp"
+                    tools:layout_editor_absoluteX="92dp"
                     tools:layout_editor_absoluteY="16dp" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="55A, 4, Jalan Universiti 9, Bandar Universiti"
+                    tools:layout_editor_absoluteX="92dp"
+                    tools:layout_editor_absoluteY="47dp" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visit Now"
+                    android:textColor="#03A9F4"
+                    tools:layout_editor_absoluteX="198dp"
+                    tools:layout_editor_absoluteY="66dp" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
