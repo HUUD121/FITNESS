@@ -6,16 +6,19 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.MediaController;
 import android.widget.VideoView;
+
+import com.example.fitness.ui.dashboard.DashboardFragment;
 
 public class Businessprof extends AppCompatActivity {
 
     public ImageView imageView17;
     public ImageView imageView39;
     public ImageView imageView18;
-
+    public ImageView backD;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +52,13 @@ public class Businessprof extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        backD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Businessprof.this, Dashboard.class);
+                startActivity(intent);
+            }});
 
         VideoView videoView = findViewById(R.id.videoView);
         String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.video;
